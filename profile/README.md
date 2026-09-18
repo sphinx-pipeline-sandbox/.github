@@ -5,29 +5,36 @@ This workspace serves as a live, interactive reference dedicated to modern Pytho
 
 ```text
 sphinx-pipeline-sandbox/
-├── .github/                       # The front door of this organization.
+├── .github/                          # The front door of this organization.
 │   └── profile/
-│       └── README.md              # You are here.
+│       └── README.md                 # You are here.
 │
-├── sphinx-sandbox-code/           # Split repo - Component A (Python code).
+├── sphinx-sandbox-code/              # Split repo - Component A (Python code).
 │   └── codebase/
-│       └── example.py             # Example Python module with reST docstrings.
+│       └── example.py                # Example Python module with reST docstrings.
 │
-├── sphinx-sandbox-docs/           # Split Repo - Component B (Sphinx pipeline)
-│   ├── .github/workflows/ci.yml   # Advanced split-path CI pipeline.
-│   └── build_local.sh             # Automated local Sphinx compilation script.
+├── sphinx-sandbox-docs/              # Split Repo - Component B (Sphinx pipeline)
+│   ├── .github/
+│   │   └── workflows/
+│   │       └── ci.yml                # Advanced split-path CI pipeline.
+│   └── docs/
+│       ├── build_local.sh            # Automated local Sphinx compilation script.
+│       ├── conf.py                   # Sphinx path configuration matrix.
+│       └── index.rst                 # Documentation index layout file.
 │
-└── sphinx-sandbox-code-and-docs/  # Combined repository (unified monorepo).
-    ├── .github/workflows/ci.yml   # Flat internal CI pipeline.
+└── sphinx-sandbox-code-and-docs/     # Combined repository (unified monorepo).
+    ├── .github/
+    │   └── workflows/
+    │       └── ci.yml                # Flat internal CI pipeline.
     ├── codebase/
-    │   └── example.py             # Example Python module with reST docstrings.
+    │   └── example.py                # Example Python module with reST docstrings.
     └── docs/
-        └── build_local.sh         # Automated local Sphinx compilation script.
+        ├── conf.py                   # Sphinx path configuration matrix.
+        ├── index.rst                 # Documentation index layout file.
+        └── build_local.sh            # Automated local Sphinx compilation script.```
 ```
-
 <!--
 ---
-
 ## 📂 Example Repositories
 
 * **[sphinx-sandbox-code](https://github.com)**
