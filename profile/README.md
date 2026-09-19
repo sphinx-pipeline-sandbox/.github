@@ -10,27 +10,29 @@ sphinx-pipeline-sandbox/
 │       └── README.md                 # You are here.
 │
 ├── sphinx-sandbox-code/              # Split repo - Component A (Python code).
-│   └── codebase/
-│       └── example.py                # Example Python module with reST docstrings.
+│   ├── codebase/
+│   |   └── example.py                # Example Python module with reST docstrings.
+|   └── .gitignore                    # Defensive tracking shield (ignores build artifacts).
 │
 ├── sphinx-sandbox-docs/              # Split Repo - Component B (Sphinx pipeline)
 │   ├── .github/
 │   │   └── workflows/
 │   │       └── ci.yml                # Advanced split-path CI pipeline.
-│   └── docs/
-│       ├── conf.py                   # Sphinx path configuration matrix.
-│       └── index.rst                 # Documentation index layout file.
+│   ├── docs/
+│   |   ├── conf.py                   # Sphinx path configuration matrix.
+│   |   └── index.rst                 # Documentation index layout file.
+|   └── .gitignore                    # Defensive tracking shield (ignores build artifacts).
 │
-├── sphinx-sandbox-code-and-docs/     # Combined repository (unified monorepo).
-|   ├── .github/
-|   │   └── workflows/
-|   │       └── ci.yml                # Flat internal CI pipeline.
-|   ├── codebase/
-|   │   └── example.py                # Example Python module with reST docstrings.
-|   └── docs/
-|       ├── conf.py                   # Sphinx path configuration matrix.
-|       └── index.rst                 # Documentation index layout file.
-└── .gitignore                        # Defensive tracking shield (ignores build artifacts).
+└── sphinx-sandbox-code-and-docs/     # Combined repository (unified monorepo).
+    ├── .github/
+    │   └── workflows/
+    │       └── ci.yml                # Flat internal CI pipeline.
+    ├── codebase/
+    │   └── example.py                # Example Python module with reST docstrings.
+    ├──docs/
+    |   ├── conf.py                   # Sphinx path configuration matrix.
+    |   └── index.rst                 # Documentation index layout file.
+    └── .gitignore                    # Defensive tracking shield (ignores build artifacts).
 ```
 <!--
 ---
