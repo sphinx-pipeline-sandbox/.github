@@ -18,20 +18,19 @@ sphinx-pipeline-sandbox/
 │   │   └── workflows/
 │   │       └── ci.yml                # Advanced split-path CI pipeline.
 │   └── docs/
-│       ├── build_local.sh            # Automated local Sphinx compilation script.
 │       ├── conf.py                   # Sphinx path configuration matrix.
 │       └── index.rst                 # Documentation index layout file.
 │
-└── sphinx-sandbox-code-and-docs/     # Combined repository (unified monorepo).
-    ├── .github/
-    │   └── workflows/
-    │       └── ci.yml                # Flat internal CI pipeline.
-    ├── codebase/
-    │   └── example.py                # Example Python module with reST docstrings.
-    └── docs/
-        ├── conf.py                   # Sphinx path configuration matrix.
-        ├── index.rst                 # Documentation index layout file.
-        └── build_local.sh            # Automated local Sphinx compilation script.```
+├── sphinx-sandbox-code-and-docs/     # Combined repository (unified monorepo).
+|   ├── .github/
+|   │   └── workflows/
+|   │       └── ci.yml                # Flat internal CI pipeline.
+|   ├── codebase/
+|   │   └── example.py                # Example Python module with reST docstrings.
+|   └── docs/
+|       ├── conf.py                   # Sphinx path configuration matrix.
+|       └── index.rst                 # Documentation index layout file.
+└── .gitignore                        # Defensive tracking shield (ignores build artifacts).
 ```
 <!--
 ---
